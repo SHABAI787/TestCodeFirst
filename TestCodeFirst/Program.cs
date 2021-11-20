@@ -101,6 +101,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
+using System.IO;
 
 namespace TestCodeFirst
 {
@@ -115,6 +116,10 @@ namespace TestCodeFirst
 
     public class BloggingContext : DbContext
     {
+        public BloggingContext() : base("DbConnectionString")
+        {
+
+        }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<User> Users { get; set; }
@@ -148,7 +153,6 @@ namespace TestCodeFirst
     {
         static void Main(string[] args)
         {
-
             using (var db = new BloggingContext())
             {
                 // Create and save a new Blog

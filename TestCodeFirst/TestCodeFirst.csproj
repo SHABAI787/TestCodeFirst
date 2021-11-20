@@ -67,6 +67,10 @@
     <Compile Include="Migrations\202111191246242_AddTableUser.designer.cs">
       <DependentUpon>202111191246242_AddTableUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111200705396_OntherDB.cs" />
+    <Compile Include="Migrations\202111200705396_OntherDB.designer.cs">
+      <DependentUpon>202111200705396_OntherDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111191246242_AddTableUser.resx">
       <DependentUpon>202111191246242_AddTableUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111200705396_OntherDB.resx">
+      <DependentUpon>202111200705396_OntherDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
